@@ -26,4 +26,4 @@ jobs:
       - name: install
         run: npm install
       - name: run
-        run: node ./checkin.js
+        run: node ./checkin.js --cookies "${{ secrets.GLADOS_COOKIE }}"

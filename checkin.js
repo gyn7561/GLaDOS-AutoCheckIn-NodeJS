@@ -45,13 +45,17 @@ async function main(cookie) {
 }
 
 async function all() {
-    if (process.env.COOKIES) {
-        let cookies = process.env.COOKIES.split("&");
+
+    // --cookie `xxxx`
+    let GLADOS_COOKIE = process.args[process.args.indexOf("--cookies") + 1];
+
+    if (GLADOS_COOKIE) {
+        let cookies = GLADOS_COOKIE.split("&");
         for (let i = 0; i < cookies.length; i++) {
             await main(cookies[i]);
         }
-    }else{
-        console.log("请设置环境变量COOKIES");
+    } else {
+        console.log("请设置COOKIE", "node checkin.js --cookies `xxxx`");
     }
 }
 
