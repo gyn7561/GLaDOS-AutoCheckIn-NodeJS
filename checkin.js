@@ -47,7 +47,7 @@ async function main(cookie) {
 async function all() {
 
     // --cookie `xxxx`
-    let GLADOS_COOKIE = process.args[process.args.indexOf("--cookies") + 1];
+    let GLADOS_COOKIE = process.argv[process.argv.indexOf("--cookies") + 1];
 
     if (GLADOS_COOKIE) {
         let cookies = GLADOS_COOKIE.split("&");
