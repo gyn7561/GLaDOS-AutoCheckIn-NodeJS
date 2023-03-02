@@ -1,0 +1,13 @@
+node_modules
+chromedata
+*.log  
+test_data
+*.sqlite.db
+chromedata
+.env
+_task.txt
+*_task.xlsx
+localkv
+dist
+lib
+SFS_TEST_PATH
