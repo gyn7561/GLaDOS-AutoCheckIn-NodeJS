@@ -27,7 +27,3 @@ jobs:
         run: npm install
       - name: run
         run: node ./checkin.js
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: master
